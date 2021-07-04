@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/pages/*.pug",
     "devopen": "parcel src/pages/*.pug --open 'google chrome'",
-    "build": "parcel dist src/pages/*.pug"
+    "start": "parcel dist src/pages/*.pug"
   },
   "repository": {
     "type": "git",
