@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: color .3s;
+
+  &:hover {
+    color: $link-color--hover;
+    transition: color .3s;
+  }
+}
+
+.form-control {
+  margin-bottom: 14px;
+}

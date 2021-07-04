@@ -1,0 +1,10 @@
+extends layouts/layout.pug
+
+block vars
+  - var title = '404';
+
+block content
+  .page-err
+    h1.page-err__title 404
+    .page-err__text Упс! Страница не найдена.
+    a.page-err__link(href='/') Вернуться на главную

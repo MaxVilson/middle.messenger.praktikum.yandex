@@ -1,0 +1,18 @@
+extends layouts/layout.pug
+
+block includes
+  include ../components/sidebar/sidebar.pug
+  include ../components/modal/modal.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+  include ../components/sidebar/sidebar.pug
+
+block vars
+  - var title = 'Чат';
+
+block content
+  .page-chat 
+    +sidebar()
+
+    

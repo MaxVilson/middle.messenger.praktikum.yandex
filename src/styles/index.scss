@@ -1,0 +1,12 @@
+@import 'variables.scss';
+@import 'global.scss';
+
+// Components
+@import '../components/modal/modal.scss';
+@import '../components/input-text/input-text.scss';
+@import '../components/btn/btn.scss';
+@import '../components/form/form.scss';
+@import '../components/sidebar/sidebar.scss';
+
+// Pages
+@import './pages.scss';

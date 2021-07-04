@@ -1,0 +1,13 @@
+include ../input-text/input-text.pug
+include ../form/form.pug
+
+mixin sidebar()
+  aside.sidebar 
+    .sidebar__top
+      button.sidebar__burger
+      +form(method='post' action='search.php')
+        +input-text({
+          id: 'search',
+          type: 'text',
+          placeholder: 'Поиск',
+        })(class='form-control sidebar__search') 
