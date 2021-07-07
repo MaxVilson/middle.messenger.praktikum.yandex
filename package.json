@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel build src/pages/*.pug && node server.js",
-    "dev": "parcel src/pages/*.pug",
-    "build": "parcel build src/pages/*.pug && node server.js"
+    "start": "npm run dev && npm run server",
+    "dev": "parcel src/pages/*.pug --port 3000",
+    "build": "parcel build src/pages/*.pug",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
