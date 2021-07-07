@@ -1,0 +1,24 @@
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 100vh;
+  border: 0;
+  border-right: 2px solid $gray-lightest;
+  background-color: $color-main-light;
+  cursor: pointer;
+}
+
+.back__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $color-main;
+  background-image: url('../images/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

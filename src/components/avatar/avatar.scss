@@ -1,0 +1,46 @@
+.avatar {
+
+}
+
+.avatar__img {
+  position: relative;
+  margin-bottom: 15px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: $gray-lightest;
+  background-image: url('../images/avatar.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:after {
+    content: 'Сменить аватар';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: $white;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0;
+    transition: all .3s;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 0.5;
+      transition: all .3s;
+    }
+  }
+}
+
+.avatar__name {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}

@@ -1,5 +1,18 @@
 extends layouts/layout.pug
 
+block includes
+  include ../components/sidebar/sidebar.pug
+  include ../components/modal/modal.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+  include ../components/sidebar/sidebar.pug
+
+block vars
+  - var title = 'Главная';
+
 block content
-  h1 Main page
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illo earum ipsa dicta? Harum architecto incidunt earum beatae eius rem nulla ab blanditiis placeat voluptas. Hic velit praesentium odit eius!
+  .page-chat 
+    +sidebar()
+
+    

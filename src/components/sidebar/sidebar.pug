@@ -5,9 +5,11 @@ mixin sidebar()
   aside.sidebar 
     .sidebar__top
       button.sidebar__burger
-      +form(method='post' action='search.php')
+        .sidebar__burger-wrapper
+          div
+      +form(method='post' action='search.php' class='sidebar__search-form')
         +input-text({
           id: 'search',
           type: 'text',
           placeholder: 'Поиск',
-        })(class='form-control sidebar__search') 
+        })(class='sidebar__search') 

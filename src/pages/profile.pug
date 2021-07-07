@@ -1,0 +1,61 @@
+extends layouts/layout.pug
+
+block includes
+  include ../components/avatar/avatar.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+  include ../components/back/back.pug
+
+block vars
+  - var title = 'Профиль';
+
+block content
+  .page-profile
+    +back(class='page-profile__back')
+    +avatar(class='page-profile__avatar')
+    +form(method='post' action='test.php' class='page-profile__form')
+      .page-profile__form-wrapper
+        +input-text({
+          id: 'login',
+          type: 'text',
+          placeholder: 'Логин',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'mail',
+          type: 'email',
+          placeholder: 'Почта',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'name',
+          type: 'text',
+          placeholder: 'Имя',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'surname',
+          type: 'text',
+          placeholder: 'Фамилия',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'chatName',
+          type: 'text',
+          placeholder: 'Ник в чате',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'phone',
+          type: 'tel',
+          placeholder: 'Телефон',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'password',
+          type: 'password',
+          placeholder: 'Пароль',
+          err: true
+        })(class='form-control')
+        a.form__link(href='/') Выйти
