@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node server.js",
-    "dev": "parcel src/pages/*.pug",
-    "devopen": "parcel src/pages/*.pug --open 'google chrome'",
-    "start": "parcel build src/pages/*.pug && npm run server"
+    "start": "parcel src/pages/*.pug",
+    "build": "parcel build src/pages/*.pug && node server.js"
   },
   "repository": {
     "type": "git",
