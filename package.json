@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev && npm run server",
+    "start": "parcel src/pages/*.pug --port 3000 && npm run server",
     "dev": "parcel src/pages/*.pug --port 3000",
     "build": "parcel build src/pages/*.pug",
     "server": "node server.js"
