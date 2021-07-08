@@ -1,4 +1,4 @@
-.avatar__img {
+.avatar__img-wrapper {
   position: relative;
   margin-bottom: 15px;
   width: 130px;
@@ -34,6 +34,10 @@
       transition: all .3s;
     }
   }
+}
+
+.avatar__img {
+  display: none;
 }
 
 .avatar__name {
