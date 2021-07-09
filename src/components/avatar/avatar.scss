@@ -1,13 +1,13 @@
 .avatar__img-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15px;
   width: 130px;
   height: 130px;
   border-radius: 50%;
   background-color: $gray-lightest;
-  background-image: url('../images/avatar.svg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   cursor: pointer;
 
   &:after {
@@ -34,10 +34,6 @@
       transition: all .3s;
     }
   }
-}
-
-.avatar__img {
-  display: none;
 }
 
 .avatar__name {
