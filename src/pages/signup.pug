@@ -1,0 +1,54 @@
+extends layouts/layout.pug
+
+block includes
+  include ../components/modal/modal.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+
+block vars
+  - var title = 'Регистрация';
+
+block content
+  .page-signup
+    +modal('Вход')
+      +form(method='post' action='test.php')
+        +input-text({
+          id: 'email',
+          type: 'email',
+          label: 'Почта',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'login',
+          type: 'text',
+          label: 'Логин',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'name',
+          type: 'text',
+          label: 'Имя',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'surname',
+          type: 'text',
+          label: 'Фамилия',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'phone',
+          type: 'tel',
+          label: 'Телефон',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'inputPassword',
+          type: 'password',
+          label: 'Пароль',
+          err: true
+        })(class='form-control')
+        .form__bottom
+          +btn('Зарегистрироваться')(href='/' class='form-control form__btn' type="submit")
+          a.form__link(href='/login.pug') Войти

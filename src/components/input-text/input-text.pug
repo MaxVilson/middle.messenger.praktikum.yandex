@@ -1,0 +1,8 @@
+mixin input-text(props)
+  .input-text&attributes(attributes)
+    .input-text__wrapper
+      if props.label
+        label.input-text__label(for= props.id) #{props.label}
+      input.input-text__input(type= props.type id= props.id placeholder= props.placeholder)
+      if props.err
+        small.input-text__err Some error!

@@ -1,0 +1,24 @@
+.input-text__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text__label {
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $text-color-muted;
+}
+
+.input-text__input {
+  padding: 6px 12px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+}
+
+.input-text__err {
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: 500;
+  color: $color-danger;
+}

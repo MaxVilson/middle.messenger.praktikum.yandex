@@ -1,0 +1,29 @@
+extends layouts/layout.pug
+
+block includes
+  include ../components/sidebar/sidebar.pug
+  include ../components/modal/modal.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+  include ../components/sidebar/sidebar.pug
+
+block vars
+  - var title = 'Главная';
+
+block content
+  .page-chat 
+    +sidebar()
+    ul 
+      li  
+        a(href="/login.pug") Login
+      li  
+        a(href="/signup.pug") signup
+      li  
+        a(href="/profile.pug") profile
+      li  
+        a(href="/404.pug") 404
+      li  
+        a(href="/500.pug") 500
+
+    

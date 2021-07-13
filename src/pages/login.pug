@@ -1,0 +1,30 @@
+extends layouts/layout.pug
+
+block includes
+  include ../components/modal/modal.pug
+  include ../components/form/form.pug
+  include ../components/input-text/input-text.pug
+  include ../components/btn/btn.pug
+
+block vars
+  - var title = 'Логин';
+
+block content
+  .page-login
+    +modal('Вход')
+      +form(method='post' action='test.php')
+        +input-text({
+          id: 'login',
+          type: 'text',
+          label: 'Логин',
+          err: true
+        })(class='form-control')
+        +input-text({
+          id: 'password',
+          type: 'password',
+          label: 'Пароль',
+          err: true
+        })(class='form-control')
+        .form__bottom
+          +btn('Авторизироваться')(href='/' class='form-control form__btn' type="submit")
+          a.form__link(href='/signup.pug') Нет аккаунта?
